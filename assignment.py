@@ -82,7 +82,7 @@ class Account:
     
     def change_account(self, new_name):
         old_name = self.name
-        self.owner = new_name
+        self.name = new_name
         self.transactions.append(f"Account name changed from{old_name} to {new_name}")
         return f"Name has been updated to {new_name}"
     
@@ -113,3 +113,7 @@ class Account:
         self.loan = 0
         self.transactions.clear()
         return "Account Closed"
+    
+  
+    
+    
