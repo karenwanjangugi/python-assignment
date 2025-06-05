@@ -12,14 +12,12 @@ class Transaction:
     
 class Account:
     def __init__(self,name):
-        self.name = name
-        self.deposits = []
-        self.withdrawals = []
         self.__frozen = False
         self.__transactions = []
         self.__loan = 0
         self.__balance = 0
-    
+    def __str__(self):
+        return
         
         
         
@@ -118,4 +116,6 @@ class Account:
         self.__loan = 0
         self.__transactions.clear()
         return "Account Closed"
+    
+    
     
